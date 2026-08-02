@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
 :root {
     --contact-bg-color: #0A0903;
     /* Pitch Black */
@@ -90,6 +97,8 @@ section {
 #project_section {
     background-color: var(--project-bg-color);
     color: var(--project-text-color);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 #contact_section {
     background-color: var(--contact-bg-color);
@@ -330,4 +339,64 @@ main {
     padding: 20px;
     font-size: 0.9rem;
     opacity: 0.8;
+}
+
+.side-nav {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 90;
+}
+
+.nav-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--nav-icon);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.2s, color 0.2s, background 0.2s;
+    cursor: pointer;
+}
+
+.nav-icon:hover,
+.nav-icon:focus {
+    transform: scale(1.1);
+    color: var(--text-color);
+    background: var(--nav-hover);
+    outline: none;
+}
+
+.stripes-container {
+    position: fixed;
+    top: 0;
+    right: 88px;
+    height: 100vh;
+    display: flex;
+    z-index: 100;
+}
+
+
+.stripe {
+    width: 20px;
+    height: 100%;
+}
+
+.stripe-1 {
+    background: var(--stripe-1);
+}
+
+.stripe-2 {
+    background: var(--stripe-2);
+}
+
+.stripe-3 {
+    background: var(--stripe-3);
 }
