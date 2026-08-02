@@ -261,6 +261,10 @@ main {
     margin-bottom: 12px;
 }
 
+.project-title {
+    font-family: 'Doto', sans-serif;
+}
+
 .project-card p {
     font-size: 1rem;
     line-height: 1.5;
