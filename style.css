@@ -41,10 +41,6 @@ body {
     color: var(--text-color);
     --project-bg-color: #FCCA46;
     --project-text-color: #0A0903;
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 .sidenavbar {
@@ -126,6 +122,11 @@ section {
     flex-direction: column;
 }
 
+/* constrain hero content and improve centering on small viewports */
+.hero_div {
+    max-width: 800px;
+}
+
 .pills {
     padding: 12px 32px;
     border-radius: 30px;
@@ -156,7 +157,7 @@ section {
     border: 1px solid #fff;
 }
 
-.hero-div,
+.hero_div, .hero-div,
 .section-content {
     max-width: 800px;
     width: 100%;
@@ -167,7 +168,7 @@ section {
     display: flex;
     align-items: center;
     padding-left: 10vw;
-    padding-right: 200px;
+    padding-right: 10vw;
     position: relative;
 }
 
@@ -505,6 +506,21 @@ main {
     .hero-links {
         flex-direction: column;
     }
+
+    /* Tablet: center hero and scale headline/subtitle */
+    .hero_div {
+        align-items: center;
+        text-align: center;
+    }
+
+    .accentFont {
+        font-size: 3.5rem;
+        line-height: 1.02;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
 }
 
 @media(max-width: 480px) {
@@ -528,6 +544,21 @@ main {
 
     .project-card {
         padding: 20px;
+    }
+
+    /* Mobile: further reduce hero headline and subtitle for small screens */
+    .hero_div {
+        align-items: center;
+        text-align: center;
+    }
+
+    .accentFont {
+        font-size: 2.2rem;
+        line-height: 1.02;
+    }
+
+    .subtitle {
+        font-size: 1rem;
     }
 }
 
