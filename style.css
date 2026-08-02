@@ -15,7 +15,6 @@ body {
 
 :root {
     --contact-bg-color: #0A0903;
-    /* Pitch Black */
     --contact-text-color: #FAFAFA;
     --bg-color: #0A0903;
     --text-color: #FAFAFA;
@@ -23,19 +22,12 @@ body {
     --nav-icon: #FFFFFF;
     --nav-hover: #333333;
     --theme-1: #000000;
-    /* Blue Slate */
     --theme-2: #FCCA46;
-    /* Golden Pollen */
     --theme-3: #A52422;
-    /* Brown Red */
     --stripe-1: #008AC9;
-    /* BMW Blue */
     --stripe-2: #2B115A;
-    /* BMW Purple */
     --stripe-3: #F11A22;
-    /* BMW Red */
     --about-bg-color: #A52422;
-    /* Brown Red */
     --about-text-color: #FAFAFA;
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -122,7 +114,6 @@ section {
     flex-direction: column;
 }
 
-/* constrain hero content and improve centering on small viewports */
 .hero_div {
     max-width: 800px;
 }
@@ -236,7 +227,6 @@ main {
     display: flex;
     flex-direction: column;
     color: #0f0b00;
-    /* Monochromatic dull yellow aesthetic */
 }
 
 .project-card:hover,
@@ -507,7 +497,6 @@ main {
         flex-direction: column;
     }
 
-    /* Tablet: center hero and scale headline/subtitle */
     .hero_div {
         align-items: center;
         text-align: center;
@@ -546,7 +535,6 @@ main {
         padding: 20px;
     }
 
-    /* Mobile: further reduce hero headline and subtitle for small screens */
     .hero_div {
         align-items: center;
         text-align: center;
