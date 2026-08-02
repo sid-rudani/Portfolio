@@ -7,6 +7,9 @@
 }
 
 :root {
+    --contact-bg-color: #0A0903;
+    /* Pitch Black */
+    --contact-text-color: #FAFAFA;
     --bg-color: #0A0903;
     --text-color: #FAFAFA;
     --nav-bg: #000000;
@@ -268,4 +271,63 @@ main {
 .project-link:focus {
     color: red;
     outline: none;
+}
+
+
+.contact-subtext {
+    max-width: 600px;
+    margin-bottom: 40px;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--theme-2);
+}
+
+.contact-form .btn-primary {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.site-footer {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
