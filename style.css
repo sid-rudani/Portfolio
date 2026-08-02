@@ -207,3 +207,65 @@ main {
     font-weight: 600;
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    padding: 30px;
+    background: #ffe49900;
+    border-radius: 20px;
+    border: 1px solid #937100;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    color: #0f0b00;
+    /* Monochromatic dull yellow aesthetic */
+}
+
+.project-card:hover,
+.project-card:focus-within {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-card-header {
+
+    margin-bottom: 20px;
+}
+
+.project-year {
+    font-family: 'Doto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.8;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.project-link {
+    color: var(--theme-1);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+    align-self: flex-start;
+}
+
+.project-link:hover,
+.project-link:focus {
+    color: red;
+    outline: none;
+}
