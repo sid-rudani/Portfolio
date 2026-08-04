@@ -1,8 +1,10 @@
+/* Project page container to center content and limit width */
 .project-page-content{
 max-width: 800px; margin: 100px auto;
   padding: 0 24px;
 }
 
+/* Styled link for navigating back to the project list */
 .back-link {
     display: inline-block;
     margin-bottom: 40px; 
@@ -25,6 +27,7 @@ font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
+/* Lists inside project details get a little padding for readability */
 .project-body ul { 
     padding-left: 20px;
 }
